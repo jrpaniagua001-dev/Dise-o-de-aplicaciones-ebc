@@ -1,0 +1,82 @@
+/* --- Estilo general --- */
+body {
+  background-color: #f4f6f9;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* HERO con fondo */
+.hero {
+  position: relative;
+  height: 50vh;
+  background-image: url('https://images.unsplash.com/photo-1518773553398-650c184e0bb3?ixlib=rb-4.0.3&w=1600&q=80');
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0, 0, 50, 0.6);
+}
+.hero .container {
+  position: relative;
+  z-index: 2;
+}
+
+/* Cards de productos */
+.card.producto {
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  transition: transform 0.2s ease-in-out;
+}
+.card.producto:hover {
+  transform: scale(1.05);
+}
+
+/* Imágenes uniformes */
+.card.producto img {
+  width: 100%;
+  height: 200px;  /* todas con la misma altura */
+  object-fit: cover; /* recorta manteniendo proporción */
+}
+
+/* Botones personalizados */
+.btn-primary {
+  background-color: #0077ff;
+  border: none;
+}
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+.btn-danger {
+  border-radius: 10px;
+}
+
+/* Carrito */
+.card-header {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* Animaciones de agregado/eliminado */
+.agregado {
+  background-color: #d1ecf1 !important;
+  color: #0c5460 !important;
+  animation: fade 1s ease-in-out;
+}
+.eliminado {
+  background-color: #f8d7da !important;
+  color: #721c24 !important;
+  animation: fade 1s ease-in-out;
+}
+@keyframes fade {
+  from { opacity: 0.3; }
+  to { opacity: 1; }
+}

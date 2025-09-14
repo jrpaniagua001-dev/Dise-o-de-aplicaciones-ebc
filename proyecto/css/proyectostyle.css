@@ -1,0 +1,24 @@
+/* Tipografías */
+h1,h2,h3,h4,h5,h6 { 
+  font-family: "Oswald"; 
+}
+body { 
+  font-family: "Open Sans"; 
+  background-color: #f9f9f9;
+  color: #222;
+}
+
+/* Botones */
+.w3-button {
+  border-radius: 5px;
+  transition: 0.3s;
+}
+.w3-button:hover {
+  transform: scale(1.05);
+}
+
+/* Header slideshow */
+#home img {
+  object-fit: cover;
+  filter: brightness(0.8);
+}

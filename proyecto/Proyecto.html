@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Indobox - Ricardo Paniagua</title>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="Proyecto.html">
+</head>
+<body class="w3-light-grey">
+
+  <!-- Barra solo con Instagram -->
+  <div class="w3-bar w3-black w3-hide-small">
+    <a href="https://www.instagram.com/__.paniagua.__?igsh=ZmJ6cnFuZDFmbWt4" target="_blank" 
+       class="w3-bar-item w3-button"><i class="fa fa-instagram"></i></a>
+  </div>
+
+  <!-- Contenido principal -->
+  <div class="w3-content" style="max-width:1600px">
+
+    <!-- Header -->
+    <header class="w3-container w3-center w3-padding-48 w3-white">
+      <h1 class="w3-xxxlarge"><b>INDOBOX</b></h1>
+      <h6>Creado por <span class="w3-tag">Ricardo Paniagua</span></h6>
+    </header>
+
+    <!-- Image header con slideshow -->
+    <header class="w3-display-container w3-wide" id="home">
+      <img class="w3-image" id="slideshow" 
+           src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1600&q=80" 
+           alt="Coche deportivo" width="1600" height="1060">
+      <div class="w3-display-left w3-padding-large">
+        <h1 class="w3-text-white">Bienvenido</h1>
+        <h1 class="w3-jumbo w3-text-white w3-hide-small"><b>INDOBOX</b></h1>
+        <h6>
+          <button class="w3-button w3-white w3-padding-large w3-large w3-opacity w3-hover-opacity-off" 
+                  onclick="document.getElementById('subscribe').style.display='block'">CONTACTO</button>
+        </h6>
+      </div>
+    </header>
+
+    <!-- Ejemplo de entrada de blog -->
+    <div class="w3-row w3-padding w3-border">
+
+      <div class="w3-col l8 s12">
+        <div class="w3-card-4 w3-margin w3-white">
+          <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&q=80" 
+               alt="Tecnología moderna" style="width:100%">
+          <div class="w3-container">
+            <h3><b>La tecnología que impulsa el futuro</b></h3>
+            <h5>Innovación, <span class="w3-opacity">Septiembre 13, 2025</span></h5>
+          </div>
+          <div class="w3-container">
+            <p>Exploramos cómo los autos inteligentes y los gadgets de última generación están transformando nuestra vida diaria.</p>
+            <div class="w3-row">
+              <div class="w3-col m8 s12">
+                <p><button class="w3-button w3-padding-large w3-white w3-border"><b>LEER MÁS »</b></button></p>
+              </div>
+              <div class="w3-col m4 w3-hide-small">
+                <p>
+                  <button class="w3-button w3-block w3-white w3-border" onclick="likeFunction(this)">
+                    <b>👍 Like</b>
+                  </button>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    
+  </div>
+
+  <!-- Subscribe Modal -->
+  <div id="subscribe" class="w3-modal w3-animate-opacity">
+    <div class="w3-modal-content" style="padding:32px">
+      <div class="w3-container w3-white">
+        <i onclick="document.getElementById('subscribe').style.display='none'" 
+           class="fa fa-remove w3-transparent w3-button w3-xlarge w3-right"></i>
+        <h2 class="w3-wide">SUSCRÍBETE</h2>
+        <p>Recibe noticias sobre coches, tecnología y más.</p>
+        <p><input class="w3-input w3-border" type="text" placeholder="Tu e-mail"></p>
+        <button type="button" class="w3-button w3-block w3-padding-large w3-red w3-margin-bottom" 
+                onclick="document.getElementById('subscribe').style.display='none'">Enviar</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="w3-container w3-dark-grey" style="padding:32px">
+    <a href="#" class="w3-button w3-black w3-padding-large w3-margin-bottom">
+      <i class="fa fa-arrow-up w3-margin-right"></i>Ir arriba
+    </a>
+    <p>Proyecto creado por <b>Ricardo Paniagua</b></p>
+  </footer>
+
+  <script src="Proyecto.html"></script>
+</body>
+</html>

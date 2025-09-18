@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Fundación Esperanza — Demo</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="CSS/pokemon.css">
+</head>
+<body>
+  <header>
+    <div class="wrap nav">
+      <div class="brand">
+        <div class="logo">FE</div>
+        <div>
+          <div class="brand-title">Fundación Esperanza</div>
+          <div class="brand-sub">Educación • Comunidad • Oportunidades</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#mision">Misión</a>
+        <a href="#programas">Programas</a>
+        <a href="#impacto">Impacto</a>
+        <a href="#voluntarios">Voluntarios</a>
+        <a href="#contacto">Contacto</a>
+        <a class="cta" href="#donar">Donar</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <!-- HERO -->
+    <section class="hero" aria-label="Hero">
+      <div>
+        <h1>Camino a una infancia con oportunidades</h1>
+        <p>Trabajamos con comunidades para garantizar educación, salud y entornos seguros. Únete como voluntario o donante y forma parte del cambio.</p>
+        <div class="hero-buttons">
+          <a class="cta" href="#donar">Donar ahora</a>
+          <a class="secondary" href="#programas">Conoce los programas</a>
+        </div>
+        <div class="stats">
+          <div class="stat"><div class="stat-num">15+</div><div class="stat-label">Años</div></div>
+          <div class="stat"><div class="stat-num">40k</div><div class="stat-label">Beneficiarios</div></div>
+          <div class="stat"><div class="stat-num">120</div><div class="stat-label">Voluntarios</div></div>
+        </div>
+      </div>
+      <div>
+        <div class="hero-card">
+          <div class="hero-card-text">
+            <div class="hero-card-title">Imagen de impacto</div>
+            <div class="hero-card-desc">Reemplaza por una foto real de tu organización</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Misión -->
+    <section id="mision">
+      <h2>Nuestra misión</h2>
+      <p class="section-desc">Crear oportunidades educativas y de desarrollo para niñas y niños en comunidades vulnerables, fomentando entornos seguros y participativos.</p>
+    </section>
+
+    <!-- Programas -->
+    <section id="programas" class="programs">
+      <h2>Programas destacados</h2>
+      <div class="grid-3">
+        <div class="card">
+          <img src="https://picsum.photos/seed/1/800/400" alt="programa 1">
+          <h3>Programa de alfabetización</h3>
+          <p>Tutorías, bibliotecas y actividades lúdicas para fortalecer la lectura.</p>
+        </div>
+        <div class="card">
+          <img src="https://picsum.photos/seed/2/800/400" alt="programa 2">
+          <h3>Talleres para maestros</h3>
+          <p>Capacitación docente y metodologías activas.</p>
+        </div>
+        <div class="card">
+          <img src="https://picsum.photos/seed/3/800/400" alt="programa 3">
+          <h3>Comedor escolar</h3>
+          <p>Alimentación nutritiva para el rendimiento académico.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Noticias -->
+    <section id="impacto">
+      <h2>Noticias y novedades</h2>
+      <p class="section-desc">Últimas entradas generadas desde una API REST (demo).</p>
+      <div id="news" class="news-list">
+        <div class="card">Cargando noticias...</div>
+      </div>
+    </section>
+
+    <!-- Voluntarios -->
+    <section id="voluntarios">
+      <h2>Voluntarios destacados</h2>
+      <p class="section-desc">Perfiles de ejemplo.</p>
+      <div id="vols" class="vol-grid">
+        <!-- 10 Voluntarios fijos -->
+        <div class="vol">
+          <img src="https://randomuser.me/api/portraits/women/21.jpg" alt="Ana Pérez">
+          <div><strong>Ana Pérez</strong></div>
+          <div style="color:var(--muted); font-size:0.9rem;">Ciudad de México, MX</div>
+        </div>
+        <div class="vol">
+          <img src="https://randomuser.me/api/portraits/men/31.jpg" alt="Juan López">
+          <div><strong>Juan López</strong></div>
+          <div style="color:var(--muted); font-size:0.9rem;">Guadalajara, MX</div>
+        </div>
+        <div class="vol">
+          <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="María Sánchez">
+          <div><strong>María Sánchez</strong></div>
+          <div style="color:var(--muted); font-size:0.9rem;">Monterrey, MX</div>
+        </div>
+        <div class="vol">
+          <img src="https://randomuser.me/api/portraits/men/41.jpg" alt="Carlos Ramírez">
+          <div><strong>Carlos Ramírez</strong></div>
+          <div style="color:var(--muted); font-size:0.9rem;">Puebla, MX</div>
+        </div>
+        <div class="vol">
+          <img src="https://randomuser.me/api/portraits/women/42.jpg" alt="Luisa Gómez">
+          <div><strong>Luisa Gómez</strong></div>
+          <div style="color:var(--muted); font-size:0.9rem;">Querétaro, MX</div>
+        </div>
+        <div class="vol">
+          <img src="https://randomuser.me/api/portraits/men/51.jpg" alt="Pedro Torres">
+          <div><strong>Pedro Torres</strong></div>
+          <div style="color:var(--muted); font-size:0.9rem;">Cancún, MX</div>
+        </div>
+        <div class="vol">
+          <img src="https://randomuser.me/api/portraits/women/52.jpg" alt="Sofía Díaz">
+          <div><strong>Sofía Díaz</strong></div>
+          <div style="color:var(--muted); font-size:0.9rem;">Toluca, MX</div>
+        </div>
+        <div class="vol">
+          <img src="https://randomuser.me/api/portraits/men/61.jpg" alt="Miguel Herrera">
+          <div><strong>Miguel Herrera</strong></div>
+          <div style="color:var(--muted); font-size:0.9rem;">Veracruz, MX</div>
+        </div>
+        <div class="vol">
+          <img src="https://randomuser.me/api/portraits/women/62.jpg" alt="Daniela Cruz">
+          <div><strong>Daniela Cruz</strong></div>
+          <div style="color:var(--muted); font-size:0.9rem;">Mérida, MX</div>
+        </div>
+        <div class="vol">
+          <img src="https://randomuser.me/api/portraits/men/71.jpg" alt="José Morales">
+          <div><strong>José Morales</strong></div>
+          <div style="color:var(--muted); font-size:0.9rem;">Tijuana, MX</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto">
+      <h2>Contacto</h2>
+      <div class="contact-box card">
+        <div class="contact-info">
+          <p>📍 Ciudad, País<br>✉️ hola@fundacionesperanza.org<br>📞 +52 55 1234 5678</p>
+        </div>
+        <form id="contact-form" class="contact-form">
+          <input name="name" placeholder="Nombre" required />
+          <input name="email" type="email" placeholder="Email" required />
+          <textarea name="message" rows="4" placeholder="Mensaje"></textarea>
+          <div class="form-actions">
+            <button type="submit">Enviar</button>
+            <small>Este formulario es demo.</small>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="wrap">
+    <div>Fundación Esperanza • © <span id="year"></span></div>
+    <div class="footer-links">Política de privacidad · Tér
+        <!-- JS externo -->
+  <script src="Js/pokemon.js"></script>
+</body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Huellas a Casa | Adopciones</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="huellas.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+  <header class="header">
+      <div class="logo">
+        <img src="img/logo.jpg" alt="Logo de Huellas a Casa" class="logo">
+        <h1>Huellas a Casa</h1>
+      </div>
+      
+      <nav class="nav">
+        <ul>
+          <li><a href="#inicio" class="nav-button">Inicio</a></li>
+          <li><a href="#quienes-somos" class="nav-button">Quiénes Somos</a></li>
+          <li><a href="#adopcion" class="nav-button">Adopción</a></li>
+          <li><a href="#contacto" class="nav-button">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="inicio" class="hero">
+      <div class="video-background">
+        <video autoplay muted loop playsinline>
+          <source src="videos/hero.mp4" type="video/mp4">
+          Tu navegador no soporta video en HTML5.
+        </video>
+      </div>
+
+      <div class="hero-content">
+        <h2>Bienvenidos a nuestro refugio</h2>
+        <p>Rescatamos, cuidamos y buscamos un hogar para nuestros peluditos.</p>
+
+
+        <div class="hero-buttons">
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdgcVo-xV7qMJXImeqL4-Y8x0FpwGQisFyszBslHovCMe_fJg/viewform" class="btn">Adopción</a>
+        <a href="https://www.huellascallejeras.com/tienda/" class="btn">Tienda</a>
+      </div>
+      </div>
+      
+    </section>
+
+    <section id="quienes-somos" class="quienes-somos">
+      <h2>Quiénes Somos</h2>
+      <div class="content">
+        <p>Somos una organización dedicada al rescate y cuidado de animales en situación de calle. Nuestra misión es darles una segunda oportunidad y encontrarles un hogar amoroso y responsable. Contamos con un equipo de expertos en cuidado animal y voluntarios apasionados.</p>
+      </div>
+    </section>
+
+    <section id="adopcion" class="adopcion">
+      <h2>🐾 Conoce a nuestros perritos 🐾</h2>
+      <div class="filter-buttons">
+        <button class="filter-btn active" data-category="all">Todos</button>
+        <button class="filter-btn" data-category="macho">Machos</button>
+        <button class="filter-btn" data-category="hembra">Hembras</button>
+      </div>
+
+      <div id="perros-container"></div>
+    </section>
+
+    <div class="row">
+      <h3>Nuestro Refugio</h3>
+      <div class="column">
+        <img src="img/refugio1.jpeg" alt="rest1" style="width:80%; height:20%;">
+      </div>
+      <div class="column">
+        <img src="img/refugio2.jpeg" alt="rest2" style="width:80%; height:20%;">
+      </div>
+      <div class="column">
+        <img src="img/refugio3.jpeg" alt="rest3" style="width:80%; height:20%;">
+      </div>  
+    </div>
+
+  </main>
+
+  <aside class="promociones">
+    <h3>Promociones</h3>
+    <p>¡Durante todo el mes de<b> octubre</b>, la esterilización de tu mascota es gratuita en nuestra clínica asociada!</p>
+    <p>Todos los viernes,<span style="font-weight: bold; color: #251D82"> 10%</span> de descuento en la consulta veterinaria.</p>
+  </aside>
+
+  <footer id="contacto">
+    <div class="footer-grid">
+      <div class="contacto">
+        <h3>Contacto</h3>
+        <address>
+          <p>
+            <i class="fa fa-map-marker-alt"></i>
+            <a href="https://www.google.com/maps/place/Callejeritos/@19.5580795,-99.2164133,17z/data=!3m1!4b1!4m6!3m5!1s0x85d21d53fd185d4b:0x14236fdc3d234c8c!8m2!3d19.5580795!4d-99.2164133!16s%2Fg%2F11tk838smb?entry=ttu&g_ep=EgoyMDI1MDkxNS4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noreferrer noopener">
+            <span style="color: #b9ddff; font-weight: bold">Ubicación: </span> Parque de los Niños, Calz. de los Jinetes SN, 54000 Tlalnepantla, Méx.
+            </a>
+          </p>
+          <p>
+            <i class="fa fa-phone"></i>
+            <span style="color: #b9ddff; font-weight: bold">Teléfono: </span> <a href="tel:+5522402957"> 55 2240 2957</a>
+          </p>
+        </address>
+      </div>
+      
+      <div class="redes-sociales">
+        <h3>Síguenos en redes sociales</h3>
+        <div class="redes-iconos">
+          <a href="https://www.facebook.com/groups/453682751384839" aria-label="Síguenos en Facebook"><i class="fab fa-facebook"></i></a>
+          <a href="https://www.instagram.com/callejeritosxtodos/" aria-label="Síguenos en Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.tiktok.com/@callejeritosxtodos" aria-label="Síguenos en TikTok"><i class="fab fa-tiktok"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <button onclick="scrollToTop()" class="scroll-to-top-btn" aria-label="Volver al inicio de la página">
+        <i class="fa fa-arrow-up"></i>
+      </button>
+      <p class="copyright">© 2025 Huellas a Casa | Todos los derechos reservados</p>
+    </div>
+  </footer>
+
+  <script src="huellas.js"></script>
+</body>
+</html>
